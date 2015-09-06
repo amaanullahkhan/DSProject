@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="emailplanner.MainScreenController">
+    <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" mouseTransparent="true" pickOnBounds="true">
+         <image>
+            <Image url="@../emailplanner/images/office-581131_1280.jpg" />
+         </image>
+      </ImageView>
+        <Button fx:id="submit" defaultButton="true" layoutX="669.0" layoutY="510.0" onAction="#submitButtonPressed" prefHeight="37.0" prefWidth="90.0" text="Submit">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <effect>
+            <DropShadow offsetX="5.0" offsetY="5.0" />
+         </effect></Button>
+        <Label fx:id="title" layoutX="58.0" layoutY="57.0" minHeight="16" minWidth="69" prefHeight="111.0" prefWidth="470.0" text="Email Planner">
+         <font>
+            <Font name="Serif Regular" size="78.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.638095238095238" endY="1.0" startX="0.638095238095238">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <DropShadow />
+         </effect></Label>
+      <PasswordField fx:id="password" layoutX="509.0" layoutY="449.0" prefHeight="37.0" prefWidth="250.0" promptText="Password">
+         <effect>
+            <DropShadow offsetX="5.0" offsetY="5.0" />
+         </effect>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </PasswordField>
+      <TextField fx:id="email" layoutX="509.0" layoutY="383.0" prefHeight="37.0" prefWidth="250.0" promptText="Email">
+         <effect>
+            <DropShadow offsetX="5.0" offsetY="5.0" />
+         </effect>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="58.0" layoutY="346.0" text="Hello There!">
+         <font>
+            <Font name="Lucida Sans Typewriter Bold" size="31.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="emailplanner.LoadingScreenController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" mouseTransparent="true" pickOnBounds="true">
+         <image>
+            <Image url="@images/office-581131_1280.jpg" />
+         </image>
+         <effect>
+            <DropShadow spread="0.56" />
+         </effect>
+      </ImageView>
+      <Label fx:id="title" layoutX="68.0" layoutY="67.0" minHeight="16" minWidth="69" prefHeight="111.0" prefWidth="470.0" text="Email Planner">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Serif Regular" size="78.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.638095238095238" endY="1.0" startX="0.638095238095238">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <ProgressIndicator fx:id="progressIndicator" layoutX="323.0" layoutY="224.0" prefHeight="153.0" prefWidth="200.0" />
+      <Label fx:id="progressDetail" layoutX="351.0" layoutY="417.0" text="Checking For Last Login User" />
+   </children>
+</AnchorPane>

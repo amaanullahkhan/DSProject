@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="EmailPlanner.jnlp">
+  <information>
+    <title>EmailPlanner</title>
+    <vendor>Amaan</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="EmailPlanner.jar" size="173995" download="eager" />
+    <jar href="lib\activation-1.1.jar" size="62983" download="eager" />
+    <jar href="lib\commons-validator-1.4.1-javadoc.jar" size="479315" download="eager" />
+    <jar href="lib\commons-validator-1.4.1.jar" size="190098" download="eager" />
+    <jar href="lib\java-mail-1.4.4.jar" size="494975" download="eager" />
+    <jar href="lib\sqljdbc4-2.0.jar" size="466359" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="EmailPlanner" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="emailplanner.Start"  name="EmailPlanner" />
+  <update check="always"/>
+</jnlp>

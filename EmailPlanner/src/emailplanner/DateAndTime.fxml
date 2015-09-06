@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="144.0" prefWidth="443.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="emailplanner.DateAndTimeController">
+   <children>
+      <DatePicker fx:id="date" editable="false" layoutX="14.0" layoutY="59.0" prefHeight="25.0" prefWidth="159.0" promptText="Select Date" showWeekNumbers="true" />
+      <Button fx:id="done" layoutX="166.0" layoutY="105.0" mnemonicParsing="false" onAction="#doneBtnPressed" prefHeight="25.0" prefWidth="112.0" text="Button" />
+      <ComboBox fx:id="hour" layoutX="268.0" layoutY="59.0" prefHeight="25.0" prefWidth="58.0" />
+      <ComboBox fx:id="minutes" layoutX="337.0" layoutY="59.0" prefHeight="25.0" prefWidth="58.0" />
+      <Label layoutX="328.0" layoutY="54.0" prefHeight="25.0" prefWidth="9.0" text=":">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="268.0" layoutY="38.0" text="Select Time:" />
+      <Label layoutX="14.0" layoutY="38.0" text="Select Date:" />
+   </children>
+</AnchorPane>

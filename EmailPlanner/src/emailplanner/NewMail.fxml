@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="emailplanner.NewMailController">
+   <children>
+      <TextField fx:id="subject" layoutX="1.0" layoutY="117.0" prefHeight="44.0" prefWidth="714.0" promptText="Subject">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="to" prefHeight="29.0" prefWidth="714.0" promptText="To">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <HTMLEditor fx:id="editor" layoutX="1.0" layoutY="161.0" prefHeight="287.0" prefWidth="600.0" />
+      <Button fx:id="sendNow" layoutX="14.0" layoutY="457.0" mnemonicParsing="false" onAction="#sendNowButtonPressed" prefHeight="29.0" prefWidth="80.0" style="-fx-background-color: #66AAFF;" text="Send Now" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="addAttachement" layoutX="212.0" layoutY="459.0" mnemonicParsing="false" onAction="#addAttachementButtonPressed" />
+      <Button fx:id="sendLater" layoutX="106.0" layoutY="457.0" mnemonicParsing="false" onAction="#sendLaterButtonPressed" prefHeight="29.0" prefWidth="80.0" style="-fx-background-color: #FF5500;" text="Send Later" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <TextField fx:id="cc" layoutY="39.0" prefHeight="29.0" prefWidth="714.0" promptText="Cc">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="bcc" layoutX="1.0" layoutY="78.0" prefHeight="29.0" prefWidth="714.0" promptText="Bcc">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
